@@ -1,0 +1,32 @@
+|prototype
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => current_state~1.DATAIN
+rst => current_state~3.DATAIN
+rst => count[4].ENA
+rst => count[3].ENA
+rst => count[2].ENA
+rst => count[1].ENA
+rst => count[0].ENA
+sensor => current_state.OUTPUTSELECT
+sensor => current_state.OUTPUTSELECT
+sensor => current_state.OUTPUTSELECT
+sensor => current_state.OUTPUTSELECT
+sensor => current_state.OUTPUTSELECT
+sensor => current_state.OUTPUTSELECT
+sensor => count.OUTPUTSELECT
+sensor => count.OUTPUTSELECT
+sensor => count.OUTPUTSELECT
+sensor => count.OUTPUTSELECT
+sensor => count.OUTPUTSELECT
+r1[0] <= r1[0].DB_MAX_OUTPUT_PORT_TYPE
+r1[1] <= r1[1].DB_MAX_OUTPUT_PORT_TYPE
+r1[2] <= r1.DB_MAX_OUTPUT_PORT_TYPE
+r2[0] <= r2[0].DB_MAX_OUTPUT_PORT_TYPE
+r2[1] <= r2[1].DB_MAX_OUTPUT_PORT_TYPE
+r2[2] <= r2.DB_MAX_OUTPUT_PORT_TYPE
+
+

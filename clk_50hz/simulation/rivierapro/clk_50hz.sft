@@ -1,0 +1,4 @@
+set tool_name "Riviera-PRO (VHDL)"
+set corner_file_list {
+	{{"Slow Model"} {clk_50hz.vho clk_50hz_vhd.sdo}}
+}

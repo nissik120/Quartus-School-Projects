@@ -1,0 +1,11 @@
+|jk_flip
+clk => y.CLK
+clk => x.CLK
+j[0] => Mux0.IN3
+j[0] => Mux1.IN3
+j[1] => Mux0.IN2
+j[1] => Mux1.IN2
+Qout << x.DB_MAX_OUTPUT_PORT_TYPE
+Qinv << y.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,610 @@
+Simulator report for muxf
+Thu Mar 08 11:58:55 2018
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 16.0 us      ;
+; Simulation Netlist Size     ; 300 nodes    ;
+; Simulation Coverage         ;      50.67 % ;
+; Total Number of Transitions ; 630          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; muxf.vwf   ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      50.67 % ;
+; Total nodes checked                                 ; 300          ;
+; Total output ports checked                          ; 300          ;
+; Total output ports with complete 1/0-value coverage ; 152          ;
+; Total output ports with no 1/0-value coverage       ; 148          ;
+; Total output ports with no 1-value coverage         ; 148          ;
+; Total output ports with no 0-value coverage         ; 148          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                ;
++------------------------------------------------------------+------------------------------------------------------------+------------------+
+; Node Name                                                  ; Output Port Name                                           ; Output Port Type ;
++------------------------------------------------------------+------------------------------------------------------------+------------------+
+; |muxf|c[0]~0                                               ; |muxf|c[0]~0                                               ; out              ;
+; |muxf|b~0                                                  ; |muxf|b~0                                                  ; out              ;
+; |muxf|c[3]~29                                              ; |muxf|c[3]~29                                              ; out              ;
+; |muxf|c[2]~30                                              ; |muxf|c[2]~30                                              ; out              ;
+; |muxf|c[1]~31                                              ; |muxf|c[1]~31                                              ; out              ;
+; |muxf|c[0]                                                 ; |muxf|c[0]                                                 ; regout           ;
+; |muxf|c[0]~32                                              ; |muxf|c[0]~32                                              ; out              ;
+; |muxf|c[1]                                                 ; |muxf|c[1]                                                 ; regout           ;
+; |muxf|c[1]~33                                              ; |muxf|c[1]~33                                              ; out              ;
+; |muxf|c[2]                                                 ; |muxf|c[2]                                                 ; regout           ;
+; |muxf|c[2]~34                                              ; |muxf|c[2]~34                                              ; out              ;
+; |muxf|c[3]                                                 ; |muxf|c[3]                                                 ; regout           ;
+; |muxf|c[3]~35                                              ; |muxf|c[3]~35                                              ; out              ;
+; |muxf|b                                                    ; |muxf|b                                                    ; regout           ;
+; |muxf|b~1                                                  ; |muxf|b~1                                                  ; out              ;
+; |muxf|a[0]                                                 ; |muxf|a[0]                                                 ; out              ;
+; |muxf|a[2]                                                 ; |muxf|a[2]                                                 ; out              ;
+; |muxf|a[4]                                                 ; |muxf|a[4]                                                 ; out              ;
+; |muxf|a[6]                                                 ; |muxf|a[6]                                                 ; out              ;
+; |muxf|clk                                                  ; |muxf|clk                                                  ; out              ;
+; |muxf|f                                                    ; |muxf|f                                                    ; pin_out          ;
+; |muxf|LessThan0~0                                          ; |muxf|LessThan0~0                                          ; out0             ;
+; |muxf|LessThan0~1                                          ; |muxf|LessThan0~1                                          ; out0             ;
+; |muxf|LessThan0~2                                          ; |muxf|LessThan0~2                                          ; out0             ;
+; |muxf|LessThan0~3                                          ; |muxf|LessThan0~3                                          ; out0             ;
+; |muxf|LessThan0~4                                          ; |muxf|LessThan0~4                                          ; out0             ;
+; |muxf|LessThan0~5                                          ; |muxf|LessThan0~5                                          ; out0             ;
+; |muxf|LessThan0~6                                          ; |muxf|LessThan0~6                                          ; out0             ;
+; |muxf|LessThan0~7                                          ; |muxf|LessThan0~7                                          ; out0             ;
+; |muxf|LessThan0~8                                          ; |muxf|LessThan0~8                                          ; out0             ;
+; |muxf|LessThan0~9                                          ; |muxf|LessThan0~9                                          ; out0             ;
+; |muxf|LessThan0~10                                         ; |muxf|LessThan0~10                                         ; out0             ;
+; |muxf|LessThan0~11                                         ; |muxf|LessThan0~11                                         ; out0             ;
+; |muxf|LessThan0~12                                         ; |muxf|LessThan0~12                                         ; out0             ;
+; |muxf|LessThan0~13                                         ; |muxf|LessThan0~13                                         ; out0             ;
+; |muxf|LessThan0~14                                         ; |muxf|LessThan0~14                                         ; out0             ;
+; |muxf|LessThan0~15                                         ; |muxf|LessThan0~15                                         ; out0             ;
+; |muxf|LessThan0~16                                         ; |muxf|LessThan0~16                                         ; out0             ;
+; |muxf|LessThan0~17                                         ; |muxf|LessThan0~17                                         ; out0             ;
+; |muxf|LessThan0~18                                         ; |muxf|LessThan0~18                                         ; out0             ;
+; |muxf|LessThan0~19                                         ; |muxf|LessThan0~19                                         ; out0             ;
+; |muxf|LessThan0~20                                         ; |muxf|LessThan0~20                                         ; out0             ;
+; |muxf|LessThan0~21                                         ; |muxf|LessThan0~21                                         ; out0             ;
+; |muxf|LessThan0~22                                         ; |muxf|LessThan0~22                                         ; out0             ;
+; |muxf|LessThan0~23                                         ; |muxf|LessThan0~23                                         ; out0             ;
+; |muxf|LessThan0~24                                         ; |muxf|LessThan0~24                                         ; out0             ;
+; |muxf|LessThan0~25                                         ; |muxf|LessThan0~25                                         ; out0             ;
+; |muxf|LessThan0~26                                         ; |muxf|LessThan0~26                                         ; out0             ;
+; |muxf|LessThan0~27                                         ; |muxf|LessThan0~27                                         ; out0             ;
+; |muxf|LessThan0~28                                         ; |muxf|LessThan0~28                                         ; out0             ;
+; |muxf|LessThan1~0                                          ; |muxf|LessThan1~0                                          ; out0             ;
+; |muxf|LessThan1~1                                          ; |muxf|LessThan1~1                                          ; out0             ;
+; |muxf|LessThan1~2                                          ; |muxf|LessThan1~2                                          ; out0             ;
+; |muxf|LessThan1~3                                          ; |muxf|LessThan1~3                                          ; out0             ;
+; |muxf|LessThan1~4                                          ; |muxf|LessThan1~4                                          ; out0             ;
+; |muxf|LessThan1~5                                          ; |muxf|LessThan1~5                                          ; out0             ;
+; |muxf|LessThan1~6                                          ; |muxf|LessThan1~6                                          ; out0             ;
+; |muxf|LessThan1~7                                          ; |muxf|LessThan1~7                                          ; out0             ;
+; |muxf|LessThan1~8                                          ; |muxf|LessThan1~8                                          ; out0             ;
+; |muxf|LessThan1~9                                          ; |muxf|LessThan1~9                                          ; out0             ;
+; |muxf|LessThan1~10                                         ; |muxf|LessThan1~10                                         ; out0             ;
+; |muxf|LessThan1~11                                         ; |muxf|LessThan1~11                                         ; out0             ;
+; |muxf|LessThan1~12                                         ; |muxf|LessThan1~12                                         ; out0             ;
+; |muxf|LessThan1~13                                         ; |muxf|LessThan1~13                                         ; out0             ;
+; |muxf|LessThan1~14                                         ; |muxf|LessThan1~14                                         ; out0             ;
+; |muxf|LessThan1~15                                         ; |muxf|LessThan1~15                                         ; out0             ;
+; |muxf|LessThan1~16                                         ; |muxf|LessThan1~16                                         ; out0             ;
+; |muxf|LessThan1~17                                         ; |muxf|LessThan1~17                                         ; out0             ;
+; |muxf|LessThan1~18                                         ; |muxf|LessThan1~18                                         ; out0             ;
+; |muxf|LessThan1~19                                         ; |muxf|LessThan1~19                                         ; out0             ;
+; |muxf|LessThan1~20                                         ; |muxf|LessThan1~20                                         ; out0             ;
+; |muxf|LessThan1~21                                         ; |muxf|LessThan1~21                                         ; out0             ;
+; |muxf|LessThan1~22                                         ; |muxf|LessThan1~22                                         ; out0             ;
+; |muxf|LessThan1~23                                         ; |muxf|LessThan1~23                                         ; out0             ;
+; |muxf|LessThan1~24                                         ; |muxf|LessThan1~24                                         ; out0             ;
+; |muxf|LessThan1~25                                         ; |muxf|LessThan1~25                                         ; out0             ;
+; |muxf|LessThan1~26                                         ; |muxf|LessThan1~26                                         ; out0             ;
+; |muxf|LessThan1~27                                         ; |muxf|LessThan1~27                                         ; out0             ;
+; |muxf|LessThan1~28                                         ; |muxf|LessThan1~28                                         ; out0             ;
+; |muxf|LessThan1~29                                         ; |muxf|LessThan1~29                                         ; out0             ;
+; |muxf|LessThan1~30                                         ; |muxf|LessThan1~30                                         ; out0             ;
+; |muxf|LessThan1~31                                         ; |muxf|LessThan1~31                                         ; out0             ;
+; |muxf|LessThan1~32                                         ; |muxf|LessThan1~32                                         ; out0             ;
+; |muxf|LessThan1~33                                         ; |muxf|LessThan1~33                                         ; out0             ;
+; |muxf|LessThan1~34                                         ; |muxf|LessThan1~34                                         ; out0             ;
+; |muxf|LessThan1~35                                         ; |muxf|LessThan1~35                                         ; out0             ;
+; |muxf|LessThan1~36                                         ; |muxf|LessThan1~36                                         ; out0             ;
+; |muxf|LessThan1~37                                         ; |muxf|LessThan1~37                                         ; out0             ;
+; |muxf|LessThan1~38                                         ; |muxf|LessThan1~38                                         ; out0             ;
+; |muxf|LessThan1~39                                         ; |muxf|LessThan1~39                                         ; out0             ;
+; |muxf|LessThan1~40                                         ; |muxf|LessThan1~40                                         ; out0             ;
+; |muxf|LessThan1~41                                         ; |muxf|LessThan1~41                                         ; out0             ;
+; |muxf|LessThan1~42                                         ; |muxf|LessThan1~42                                         ; out0             ;
+; |muxf|LessThan1~43                                         ; |muxf|LessThan1~43                                         ; out0             ;
+; |muxf|LessThan1~44                                         ; |muxf|LessThan1~44                                         ; out0             ;
+; |muxf|LessThan1~45                                         ; |muxf|LessThan1~45                                         ; out0             ;
+; |muxf|LessThan1~46                                         ; |muxf|LessThan1~46                                         ; out0             ;
+; |muxf|LessThan1~47                                         ; |muxf|LessThan1~47                                         ; out0             ;
+; |muxf|LessThan1~48                                         ; |muxf|LessThan1~48                                         ; out0             ;
+; |muxf|LessThan1~49                                         ; |muxf|LessThan1~49                                         ; out0             ;
+; |muxf|LessThan1~50                                         ; |muxf|LessThan1~50                                         ; out0             ;
+; |muxf|LessThan1~51                                         ; |muxf|LessThan1~51                                         ; out0             ;
+; |muxf|LessThan1~52                                         ; |muxf|LessThan1~52                                         ; out0             ;
+; |muxf|LessThan1~53                                         ; |muxf|LessThan1~53                                         ; out0             ;
+; |muxf|LessThan1~54                                         ; |muxf|LessThan1~54                                         ; out0             ;
+; |muxf|Add0~0                                               ; |muxf|Add0~0                                               ; out0             ;
+; |muxf|Add0~1                                               ; |muxf|Add0~1                                               ; out0             ;
+; |muxf|Add0~2                                               ; |muxf|Add0~2                                               ; out0             ;
+; |muxf|Add0~3                                               ; |muxf|Add0~3                                               ; out0             ;
+; |muxf|Add0~4                                               ; |muxf|Add0~4                                               ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~1              ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~1              ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~2              ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~2              ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~3              ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~3              ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~4              ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~4              ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~5              ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~5              ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~6              ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~6              ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~7              ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~7              ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~8              ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~8              ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~10             ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~10             ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~11             ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~11             ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~12             ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~12             ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~13             ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~13             ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~14             ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~14             ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~15             ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~15             ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~16             ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~16             ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~17             ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~17             ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~18             ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~18             ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~19             ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~19             ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~20             ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~20             ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|result_node[0]~0 ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|result_node[0]~0 ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~21             ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~21             ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~23             ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~23             ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~24             ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~24             ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~25             ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~25             ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~26             ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~26             ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~27             ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~27             ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~28             ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~28             ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~29             ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~29             ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~30             ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~30             ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~32             ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~32             ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~33             ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~33             ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~34             ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~34             ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~35             ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~35             ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~36             ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~36             ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~37             ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~37             ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~38             ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~38             ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~39             ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~39             ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~40             ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~40             ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~41             ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~41             ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~42             ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~42             ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|result_node[0]~1 ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|result_node[0]~1 ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|result_node[0]   ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|result_node[0]   ; out0             ;
++------------------------------------------------------------+------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                           ;
++------------------------------------------------+------------------------------------------------+------------------+
+; Node Name                                      ; Output Port Name                               ; Output Port Type ;
++------------------------------------------------+------------------------------------------------+------------------+
+; |muxf|c[31]~1                                  ; |muxf|c[31]~1                                  ; out              ;
+; |muxf|c[30]~2                                  ; |muxf|c[30]~2                                  ; out              ;
+; |muxf|c[29]~3                                  ; |muxf|c[29]~3                                  ; out              ;
+; |muxf|c[28]~4                                  ; |muxf|c[28]~4                                  ; out              ;
+; |muxf|c[27]~5                                  ; |muxf|c[27]~5                                  ; out              ;
+; |muxf|c[26]~6                                  ; |muxf|c[26]~6                                  ; out              ;
+; |muxf|c[25]~7                                  ; |muxf|c[25]~7                                  ; out              ;
+; |muxf|c[24]~8                                  ; |muxf|c[24]~8                                  ; out              ;
+; |muxf|c[23]~9                                  ; |muxf|c[23]~9                                  ; out              ;
+; |muxf|c[22]~10                                 ; |muxf|c[22]~10                                 ; out              ;
+; |muxf|c[21]~11                                 ; |muxf|c[21]~11                                 ; out              ;
+; |muxf|c[20]~12                                 ; |muxf|c[20]~12                                 ; out              ;
+; |muxf|c[19]~13                                 ; |muxf|c[19]~13                                 ; out              ;
+; |muxf|c[18]~14                                 ; |muxf|c[18]~14                                 ; out              ;
+; |muxf|c[17]~15                                 ; |muxf|c[17]~15                                 ; out              ;
+; |muxf|c[16]~16                                 ; |muxf|c[16]~16                                 ; out              ;
+; |muxf|c[15]~17                                 ; |muxf|c[15]~17                                 ; out              ;
+; |muxf|c[14]~18                                 ; |muxf|c[14]~18                                 ; out              ;
+; |muxf|c[13]~19                                 ; |muxf|c[13]~19                                 ; out              ;
+; |muxf|c[12]~20                                 ; |muxf|c[12]~20                                 ; out              ;
+; |muxf|c[11]~21                                 ; |muxf|c[11]~21                                 ; out              ;
+; |muxf|c[10]~22                                 ; |muxf|c[10]~22                                 ; out              ;
+; |muxf|c[9]~23                                  ; |muxf|c[9]~23                                  ; out              ;
+; |muxf|c[8]~24                                  ; |muxf|c[8]~24                                  ; out              ;
+; |muxf|c[7]~25                                  ; |muxf|c[7]~25                                  ; out              ;
+; |muxf|c[6]~26                                  ; |muxf|c[6]~26                                  ; out              ;
+; |muxf|c[5]~27                                  ; |muxf|c[5]~27                                  ; out              ;
+; |muxf|c[4]~28                                  ; |muxf|c[4]~28                                  ; out              ;
+; |muxf|c[4]                                     ; |muxf|c[4]                                     ; regout           ;
+; |muxf|c[4]~36                                  ; |muxf|c[4]~36                                  ; out              ;
+; |muxf|c[5]                                     ; |muxf|c[5]                                     ; regout           ;
+; |muxf|c[5]~37                                  ; |muxf|c[5]~37                                  ; out              ;
+; |muxf|c[6]                                     ; |muxf|c[6]                                     ; regout           ;
+; |muxf|c[6]~38                                  ; |muxf|c[6]~38                                  ; out              ;
+; |muxf|c[7]                                     ; |muxf|c[7]                                     ; regout           ;
+; |muxf|c[7]~39                                  ; |muxf|c[7]~39                                  ; out              ;
+; |muxf|c[8]                                     ; |muxf|c[8]                                     ; regout           ;
+; |muxf|c[8]~40                                  ; |muxf|c[8]~40                                  ; out              ;
+; |muxf|c[9]                                     ; |muxf|c[9]                                     ; regout           ;
+; |muxf|c[9]~41                                  ; |muxf|c[9]~41                                  ; out              ;
+; |muxf|c[10]                                    ; |muxf|c[10]                                    ; regout           ;
+; |muxf|c[10]~42                                 ; |muxf|c[10]~42                                 ; out              ;
+; |muxf|c[11]                                    ; |muxf|c[11]                                    ; regout           ;
+; |muxf|c[11]~43                                 ; |muxf|c[11]~43                                 ; out              ;
+; |muxf|c[12]                                    ; |muxf|c[12]                                    ; regout           ;
+; |muxf|c[12]~44                                 ; |muxf|c[12]~44                                 ; out              ;
+; |muxf|c[13]                                    ; |muxf|c[13]                                    ; regout           ;
+; |muxf|c[13]~45                                 ; |muxf|c[13]~45                                 ; out              ;
+; |muxf|c[14]                                    ; |muxf|c[14]                                    ; regout           ;
+; |muxf|c[14]~46                                 ; |muxf|c[14]~46                                 ; out              ;
+; |muxf|c[15]                                    ; |muxf|c[15]                                    ; regout           ;
+; |muxf|c[15]~47                                 ; |muxf|c[15]~47                                 ; out              ;
+; |muxf|c[16]                                    ; |muxf|c[16]                                    ; regout           ;
+; |muxf|c[16]~48                                 ; |muxf|c[16]~48                                 ; out              ;
+; |muxf|c[17]                                    ; |muxf|c[17]                                    ; regout           ;
+; |muxf|c[17]~49                                 ; |muxf|c[17]~49                                 ; out              ;
+; |muxf|c[18]                                    ; |muxf|c[18]                                    ; regout           ;
+; |muxf|c[18]~50                                 ; |muxf|c[18]~50                                 ; out              ;
+; |muxf|c[19]                                    ; |muxf|c[19]                                    ; regout           ;
+; |muxf|c[19]~51                                 ; |muxf|c[19]~51                                 ; out              ;
+; |muxf|c[20]                                    ; |muxf|c[20]                                    ; regout           ;
+; |muxf|c[20]~52                                 ; |muxf|c[20]~52                                 ; out              ;
+; |muxf|c[21]                                    ; |muxf|c[21]                                    ; regout           ;
+; |muxf|c[21]~53                                 ; |muxf|c[21]~53                                 ; out              ;
+; |muxf|c[22]                                    ; |muxf|c[22]                                    ; regout           ;
+; |muxf|c[22]~54                                 ; |muxf|c[22]~54                                 ; out              ;
+; |muxf|c[23]                                    ; |muxf|c[23]                                    ; regout           ;
+; |muxf|c[23]~55                                 ; |muxf|c[23]~55                                 ; out              ;
+; |muxf|c[24]                                    ; |muxf|c[24]                                    ; regout           ;
+; |muxf|c[24]~56                                 ; |muxf|c[24]~56                                 ; out              ;
+; |muxf|c[25]                                    ; |muxf|c[25]                                    ; regout           ;
+; |muxf|c[25]~57                                 ; |muxf|c[25]~57                                 ; out              ;
+; |muxf|c[26]                                    ; |muxf|c[26]                                    ; regout           ;
+; |muxf|c[26]~58                                 ; |muxf|c[26]~58                                 ; out              ;
+; |muxf|c[27]                                    ; |muxf|c[27]                                    ; regout           ;
+; |muxf|c[27]~59                                 ; |muxf|c[27]~59                                 ; out              ;
+; |muxf|c[28]                                    ; |muxf|c[28]                                    ; regout           ;
+; |muxf|c[28]~60                                 ; |muxf|c[28]~60                                 ; out              ;
+; |muxf|c[29]                                    ; |muxf|c[29]                                    ; regout           ;
+; |muxf|c[29]~61                                 ; |muxf|c[29]~61                                 ; out              ;
+; |muxf|c[30]                                    ; |muxf|c[30]                                    ; regout           ;
+; |muxf|c[30]~62                                 ; |muxf|c[30]~62                                 ; out              ;
+; |muxf|c[31]                                    ; |muxf|c[31]                                    ; regout           ;
+; |muxf|c[31]~63                                 ; |muxf|c[31]~63                                 ; out              ;
+; |muxf|a[1]                                     ; |muxf|a[1]                                     ; out              ;
+; |muxf|a[3]                                     ; |muxf|a[3]                                     ; out              ;
+; |muxf|a[5]                                     ; |muxf|a[5]                                     ; out              ;
+; |muxf|a[7]                                     ; |muxf|a[7]                                     ; out              ;
+; |muxf|Add0~5                                   ; |muxf|Add0~5                                   ; out0             ;
+; |muxf|Add0~6                                   ; |muxf|Add0~6                                   ; out0             ;
+; |muxf|Add0~7                                   ; |muxf|Add0~7                                   ; out0             ;
+; |muxf|Add0~8                                   ; |muxf|Add0~8                                   ; out0             ;
+; |muxf|Add0~9                                   ; |muxf|Add0~9                                   ; out0             ;
+; |muxf|Add0~10                                  ; |muxf|Add0~10                                  ; out0             ;
+; |muxf|Add0~11                                  ; |muxf|Add0~11                                  ; out0             ;
+; |muxf|Add0~12                                  ; |muxf|Add0~12                                  ; out0             ;
+; |muxf|Add0~13                                  ; |muxf|Add0~13                                  ; out0             ;
+; |muxf|Add0~14                                  ; |muxf|Add0~14                                  ; out0             ;
+; |muxf|Add0~15                                  ; |muxf|Add0~15                                  ; out0             ;
+; |muxf|Add0~16                                  ; |muxf|Add0~16                                  ; out0             ;
+; |muxf|Add0~17                                  ; |muxf|Add0~17                                  ; out0             ;
+; |muxf|Add0~18                                  ; |muxf|Add0~18                                  ; out0             ;
+; |muxf|Add0~19                                  ; |muxf|Add0~19                                  ; out0             ;
+; |muxf|Add0~20                                  ; |muxf|Add0~20                                  ; out0             ;
+; |muxf|Add0~21                                  ; |muxf|Add0~21                                  ; out0             ;
+; |muxf|Add0~22                                  ; |muxf|Add0~22                                  ; out0             ;
+; |muxf|Add0~23                                  ; |muxf|Add0~23                                  ; out0             ;
+; |muxf|Add0~24                                  ; |muxf|Add0~24                                  ; out0             ;
+; |muxf|Add0~25                                  ; |muxf|Add0~25                                  ; out0             ;
+; |muxf|Add0~26                                  ; |muxf|Add0~26                                  ; out0             ;
+; |muxf|Add0~27                                  ; |muxf|Add0~27                                  ; out0             ;
+; |muxf|Add0~28                                  ; |muxf|Add0~28                                  ; out0             ;
+; |muxf|Add0~29                                  ; |muxf|Add0~29                                  ; out0             ;
+; |muxf|Add0~30                                  ; |muxf|Add0~30                                  ; out0             ;
+; |muxf|Add0~31                                  ; |muxf|Add0~31                                  ; out0             ;
+; |muxf|Add0~32                                  ; |muxf|Add0~32                                  ; out0             ;
+; |muxf|Add0~33                                  ; |muxf|Add0~33                                  ; out0             ;
+; |muxf|Add0~34                                  ; |muxf|Add0~34                                  ; out0             ;
+; |muxf|Add0~35                                  ; |muxf|Add0~35                                  ; out0             ;
+; |muxf|Add0~36                                  ; |muxf|Add0~36                                  ; out0             ;
+; |muxf|Add0~37                                  ; |muxf|Add0~37                                  ; out0             ;
+; |muxf|Add0~38                                  ; |muxf|Add0~38                                  ; out0             ;
+; |muxf|Add0~39                                  ; |muxf|Add0~39                                  ; out0             ;
+; |muxf|Add0~40                                  ; |muxf|Add0~40                                  ; out0             ;
+; |muxf|Add0~41                                  ; |muxf|Add0~41                                  ; out0             ;
+; |muxf|Add0~42                                  ; |muxf|Add0~42                                  ; out0             ;
+; |muxf|Add0~43                                  ; |muxf|Add0~43                                  ; out0             ;
+; |muxf|Add0~44                                  ; |muxf|Add0~44                                  ; out0             ;
+; |muxf|Add0~45                                  ; |muxf|Add0~45                                  ; out0             ;
+; |muxf|Add0~46                                  ; |muxf|Add0~46                                  ; out0             ;
+; |muxf|Add0~47                                  ; |muxf|Add0~47                                  ; out0             ;
+; |muxf|Add0~48                                  ; |muxf|Add0~48                                  ; out0             ;
+; |muxf|Add0~49                                  ; |muxf|Add0~49                                  ; out0             ;
+; |muxf|Add0~50                                  ; |muxf|Add0~50                                  ; out0             ;
+; |muxf|Add0~51                                  ; |muxf|Add0~51                                  ; out0             ;
+; |muxf|Add0~52                                  ; |muxf|Add0~52                                  ; out0             ;
+; |muxf|Add0~53                                  ; |muxf|Add0~53                                  ; out0             ;
+; |muxf|Add0~54                                  ; |muxf|Add0~54                                  ; out0             ;
+; |muxf|Add0~55                                  ; |muxf|Add0~55                                  ; out0             ;
+; |muxf|Add0~56                                  ; |muxf|Add0~56                                  ; out0             ;
+; |muxf|Add0~57                                  ; |muxf|Add0~57                                  ; out0             ;
+; |muxf|Add0~58                                  ; |muxf|Add0~58                                  ; out0             ;
+; |muxf|Add0~59                                  ; |muxf|Add0~59                                  ; out0             ;
+; |muxf|Add0~60                                  ; |muxf|Add0~60                                  ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~0  ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~0  ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~9  ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~9  ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~22 ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~22 ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~31 ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~31 ; out0             ;
++------------------------------------------------+------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                           ;
++------------------------------------------------+------------------------------------------------+------------------+
+; Node Name                                      ; Output Port Name                               ; Output Port Type ;
++------------------------------------------------+------------------------------------------------+------------------+
+; |muxf|c[31]~1                                  ; |muxf|c[31]~1                                  ; out              ;
+; |muxf|c[30]~2                                  ; |muxf|c[30]~2                                  ; out              ;
+; |muxf|c[29]~3                                  ; |muxf|c[29]~3                                  ; out              ;
+; |muxf|c[28]~4                                  ; |muxf|c[28]~4                                  ; out              ;
+; |muxf|c[27]~5                                  ; |muxf|c[27]~5                                  ; out              ;
+; |muxf|c[26]~6                                  ; |muxf|c[26]~6                                  ; out              ;
+; |muxf|c[25]~7                                  ; |muxf|c[25]~7                                  ; out              ;
+; |muxf|c[24]~8                                  ; |muxf|c[24]~8                                  ; out              ;
+; |muxf|c[23]~9                                  ; |muxf|c[23]~9                                  ; out              ;
+; |muxf|c[22]~10                                 ; |muxf|c[22]~10                                 ; out              ;
+; |muxf|c[21]~11                                 ; |muxf|c[21]~11                                 ; out              ;
+; |muxf|c[20]~12                                 ; |muxf|c[20]~12                                 ; out              ;
+; |muxf|c[19]~13                                 ; |muxf|c[19]~13                                 ; out              ;
+; |muxf|c[18]~14                                 ; |muxf|c[18]~14                                 ; out              ;
+; |muxf|c[17]~15                                 ; |muxf|c[17]~15                                 ; out              ;
+; |muxf|c[16]~16                                 ; |muxf|c[16]~16                                 ; out              ;
+; |muxf|c[15]~17                                 ; |muxf|c[15]~17                                 ; out              ;
+; |muxf|c[14]~18                                 ; |muxf|c[14]~18                                 ; out              ;
+; |muxf|c[13]~19                                 ; |muxf|c[13]~19                                 ; out              ;
+; |muxf|c[12]~20                                 ; |muxf|c[12]~20                                 ; out              ;
+; |muxf|c[11]~21                                 ; |muxf|c[11]~21                                 ; out              ;
+; |muxf|c[10]~22                                 ; |muxf|c[10]~22                                 ; out              ;
+; |muxf|c[9]~23                                  ; |muxf|c[9]~23                                  ; out              ;
+; |muxf|c[8]~24                                  ; |muxf|c[8]~24                                  ; out              ;
+; |muxf|c[7]~25                                  ; |muxf|c[7]~25                                  ; out              ;
+; |muxf|c[6]~26                                  ; |muxf|c[6]~26                                  ; out              ;
+; |muxf|c[5]~27                                  ; |muxf|c[5]~27                                  ; out              ;
+; |muxf|c[4]~28                                  ; |muxf|c[4]~28                                  ; out              ;
+; |muxf|c[4]                                     ; |muxf|c[4]                                     ; regout           ;
+; |muxf|c[4]~36                                  ; |muxf|c[4]~36                                  ; out              ;
+; |muxf|c[5]                                     ; |muxf|c[5]                                     ; regout           ;
+; |muxf|c[5]~37                                  ; |muxf|c[5]~37                                  ; out              ;
+; |muxf|c[6]                                     ; |muxf|c[6]                                     ; regout           ;
+; |muxf|c[6]~38                                  ; |muxf|c[6]~38                                  ; out              ;
+; |muxf|c[7]                                     ; |muxf|c[7]                                     ; regout           ;
+; |muxf|c[7]~39                                  ; |muxf|c[7]~39                                  ; out              ;
+; |muxf|c[8]                                     ; |muxf|c[8]                                     ; regout           ;
+; |muxf|c[8]~40                                  ; |muxf|c[8]~40                                  ; out              ;
+; |muxf|c[9]                                     ; |muxf|c[9]                                     ; regout           ;
+; |muxf|c[9]~41                                  ; |muxf|c[9]~41                                  ; out              ;
+; |muxf|c[10]                                    ; |muxf|c[10]                                    ; regout           ;
+; |muxf|c[10]~42                                 ; |muxf|c[10]~42                                 ; out              ;
+; |muxf|c[11]                                    ; |muxf|c[11]                                    ; regout           ;
+; |muxf|c[11]~43                                 ; |muxf|c[11]~43                                 ; out              ;
+; |muxf|c[12]                                    ; |muxf|c[12]                                    ; regout           ;
+; |muxf|c[12]~44                                 ; |muxf|c[12]~44                                 ; out              ;
+; |muxf|c[13]                                    ; |muxf|c[13]                                    ; regout           ;
+; |muxf|c[13]~45                                 ; |muxf|c[13]~45                                 ; out              ;
+; |muxf|c[14]                                    ; |muxf|c[14]                                    ; regout           ;
+; |muxf|c[14]~46                                 ; |muxf|c[14]~46                                 ; out              ;
+; |muxf|c[15]                                    ; |muxf|c[15]                                    ; regout           ;
+; |muxf|c[15]~47                                 ; |muxf|c[15]~47                                 ; out              ;
+; |muxf|c[16]                                    ; |muxf|c[16]                                    ; regout           ;
+; |muxf|c[16]~48                                 ; |muxf|c[16]~48                                 ; out              ;
+; |muxf|c[17]                                    ; |muxf|c[17]                                    ; regout           ;
+; |muxf|c[17]~49                                 ; |muxf|c[17]~49                                 ; out              ;
+; |muxf|c[18]                                    ; |muxf|c[18]                                    ; regout           ;
+; |muxf|c[18]~50                                 ; |muxf|c[18]~50                                 ; out              ;
+; |muxf|c[19]                                    ; |muxf|c[19]                                    ; regout           ;
+; |muxf|c[19]~51                                 ; |muxf|c[19]~51                                 ; out              ;
+; |muxf|c[20]                                    ; |muxf|c[20]                                    ; regout           ;
+; |muxf|c[20]~52                                 ; |muxf|c[20]~52                                 ; out              ;
+; |muxf|c[21]                                    ; |muxf|c[21]                                    ; regout           ;
+; |muxf|c[21]~53                                 ; |muxf|c[21]~53                                 ; out              ;
+; |muxf|c[22]                                    ; |muxf|c[22]                                    ; regout           ;
+; |muxf|c[22]~54                                 ; |muxf|c[22]~54                                 ; out              ;
+; |muxf|c[23]                                    ; |muxf|c[23]                                    ; regout           ;
+; |muxf|c[23]~55                                 ; |muxf|c[23]~55                                 ; out              ;
+; |muxf|c[24]                                    ; |muxf|c[24]                                    ; regout           ;
+; |muxf|c[24]~56                                 ; |muxf|c[24]~56                                 ; out              ;
+; |muxf|c[25]                                    ; |muxf|c[25]                                    ; regout           ;
+; |muxf|c[25]~57                                 ; |muxf|c[25]~57                                 ; out              ;
+; |muxf|c[26]                                    ; |muxf|c[26]                                    ; regout           ;
+; |muxf|c[26]~58                                 ; |muxf|c[26]~58                                 ; out              ;
+; |muxf|c[27]                                    ; |muxf|c[27]                                    ; regout           ;
+; |muxf|c[27]~59                                 ; |muxf|c[27]~59                                 ; out              ;
+; |muxf|c[28]                                    ; |muxf|c[28]                                    ; regout           ;
+; |muxf|c[28]~60                                 ; |muxf|c[28]~60                                 ; out              ;
+; |muxf|c[29]                                    ; |muxf|c[29]                                    ; regout           ;
+; |muxf|c[29]~61                                 ; |muxf|c[29]~61                                 ; out              ;
+; |muxf|c[30]                                    ; |muxf|c[30]                                    ; regout           ;
+; |muxf|c[30]~62                                 ; |muxf|c[30]~62                                 ; out              ;
+; |muxf|c[31]                                    ; |muxf|c[31]                                    ; regout           ;
+; |muxf|c[31]~63                                 ; |muxf|c[31]~63                                 ; out              ;
+; |muxf|a[1]                                     ; |muxf|a[1]                                     ; out              ;
+; |muxf|a[3]                                     ; |muxf|a[3]                                     ; out              ;
+; |muxf|a[5]                                     ; |muxf|a[5]                                     ; out              ;
+; |muxf|a[7]                                     ; |muxf|a[7]                                     ; out              ;
+; |muxf|Add0~5                                   ; |muxf|Add0~5                                   ; out0             ;
+; |muxf|Add0~6                                   ; |muxf|Add0~6                                   ; out0             ;
+; |muxf|Add0~7                                   ; |muxf|Add0~7                                   ; out0             ;
+; |muxf|Add0~8                                   ; |muxf|Add0~8                                   ; out0             ;
+; |muxf|Add0~9                                   ; |muxf|Add0~9                                   ; out0             ;
+; |muxf|Add0~10                                  ; |muxf|Add0~10                                  ; out0             ;
+; |muxf|Add0~11                                  ; |muxf|Add0~11                                  ; out0             ;
+; |muxf|Add0~12                                  ; |muxf|Add0~12                                  ; out0             ;
+; |muxf|Add0~13                                  ; |muxf|Add0~13                                  ; out0             ;
+; |muxf|Add0~14                                  ; |muxf|Add0~14                                  ; out0             ;
+; |muxf|Add0~15                                  ; |muxf|Add0~15                                  ; out0             ;
+; |muxf|Add0~16                                  ; |muxf|Add0~16                                  ; out0             ;
+; |muxf|Add0~17                                  ; |muxf|Add0~17                                  ; out0             ;
+; |muxf|Add0~18                                  ; |muxf|Add0~18                                  ; out0             ;
+; |muxf|Add0~19                                  ; |muxf|Add0~19                                  ; out0             ;
+; |muxf|Add0~20                                  ; |muxf|Add0~20                                  ; out0             ;
+; |muxf|Add0~21                                  ; |muxf|Add0~21                                  ; out0             ;
+; |muxf|Add0~22                                  ; |muxf|Add0~22                                  ; out0             ;
+; |muxf|Add0~23                                  ; |muxf|Add0~23                                  ; out0             ;
+; |muxf|Add0~24                                  ; |muxf|Add0~24                                  ; out0             ;
+; |muxf|Add0~25                                  ; |muxf|Add0~25                                  ; out0             ;
+; |muxf|Add0~26                                  ; |muxf|Add0~26                                  ; out0             ;
+; |muxf|Add0~27                                  ; |muxf|Add0~27                                  ; out0             ;
+; |muxf|Add0~28                                  ; |muxf|Add0~28                                  ; out0             ;
+; |muxf|Add0~29                                  ; |muxf|Add0~29                                  ; out0             ;
+; |muxf|Add0~30                                  ; |muxf|Add0~30                                  ; out0             ;
+; |muxf|Add0~31                                  ; |muxf|Add0~31                                  ; out0             ;
+; |muxf|Add0~32                                  ; |muxf|Add0~32                                  ; out0             ;
+; |muxf|Add0~33                                  ; |muxf|Add0~33                                  ; out0             ;
+; |muxf|Add0~34                                  ; |muxf|Add0~34                                  ; out0             ;
+; |muxf|Add0~35                                  ; |muxf|Add0~35                                  ; out0             ;
+; |muxf|Add0~36                                  ; |muxf|Add0~36                                  ; out0             ;
+; |muxf|Add0~37                                  ; |muxf|Add0~37                                  ; out0             ;
+; |muxf|Add0~38                                  ; |muxf|Add0~38                                  ; out0             ;
+; |muxf|Add0~39                                  ; |muxf|Add0~39                                  ; out0             ;
+; |muxf|Add0~40                                  ; |muxf|Add0~40                                  ; out0             ;
+; |muxf|Add0~41                                  ; |muxf|Add0~41                                  ; out0             ;
+; |muxf|Add0~42                                  ; |muxf|Add0~42                                  ; out0             ;
+; |muxf|Add0~43                                  ; |muxf|Add0~43                                  ; out0             ;
+; |muxf|Add0~44                                  ; |muxf|Add0~44                                  ; out0             ;
+; |muxf|Add0~45                                  ; |muxf|Add0~45                                  ; out0             ;
+; |muxf|Add0~46                                  ; |muxf|Add0~46                                  ; out0             ;
+; |muxf|Add0~47                                  ; |muxf|Add0~47                                  ; out0             ;
+; |muxf|Add0~48                                  ; |muxf|Add0~48                                  ; out0             ;
+; |muxf|Add0~49                                  ; |muxf|Add0~49                                  ; out0             ;
+; |muxf|Add0~50                                  ; |muxf|Add0~50                                  ; out0             ;
+; |muxf|Add0~51                                  ; |muxf|Add0~51                                  ; out0             ;
+; |muxf|Add0~52                                  ; |muxf|Add0~52                                  ; out0             ;
+; |muxf|Add0~53                                  ; |muxf|Add0~53                                  ; out0             ;
+; |muxf|Add0~54                                  ; |muxf|Add0~54                                  ; out0             ;
+; |muxf|Add0~55                                  ; |muxf|Add0~55                                  ; out0             ;
+; |muxf|Add0~56                                  ; |muxf|Add0~56                                  ; out0             ;
+; |muxf|Add0~57                                  ; |muxf|Add0~57                                  ; out0             ;
+; |muxf|Add0~58                                  ; |muxf|Add0~58                                  ; out0             ;
+; |muxf|Add0~59                                  ; |muxf|Add0~59                                  ; out0             ;
+; |muxf|Add0~60                                  ; |muxf|Add0~60                                  ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~0  ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~0  ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~9  ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~9  ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~22 ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~22 ; out0             ;
+; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~31 ; |muxf|lpm_mux:Mux0|mux_3nc:auto_generated|_~31 ; out0             ;
++------------------------------------------------+------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu Mar 08 11:58:54 2018
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off muxf -c muxf
+Info: Using vector source file "C:/Users/NISSILK/Documents/Quartus Projects/muxf/muxf.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning: Found clock-sensitive change during active clock edge at time 320.0 ns on register "|muxf|b"
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      50.67 %
+Info: Number of transitions in simulation is 630
+Info: Quartus II Simulator was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 195 megabytes
+    Info: Processing ended: Thu Mar 08 11:58:55 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

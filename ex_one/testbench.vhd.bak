@@ -1,0 +1,52 @@
+-----------testbench for question a-------------------
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY testbench IS
+END testbench;
+---------------------------------------------------------
+ARCHITECTURE tb OF testbench IS
+---DUT-------------------------------
+COMPONENT ex_one IS
+		PORT(
+		 A,B,C : IN STD_LOGIC;
+		 X: OUT STD_LOGIC
+		 );
+END COMPONENT;
+----signal initialization------------
+SIGNAL Ain,Bin,Cin,Xout: STD_LOGIC;
+	BEGIN
+	----port mapping--------
+	DUT: ex_one PORT MAP(Ain=>A,Bin=>B,Cin=>C,Xout=>X);
+	PROCESS
+		BEGIN
+		Ain<='0'; Bin<='0'; Cin<='0';  ---000---
+		WAIT FOR 1 ms;
+		ASSERT(Xout='0')REPORT "FAIL" SEVERITY ERROR;
+		Ain<='0'; Bin<='0'; Cin<='1'; ---001---
+		WAIT FOR 1 ms;
+		ASSERT(Xout='0')REPORT "FAIL" SEVERITY ERROR;
+		Ain<='0'; Bin<='1'; Cin<='0'; ---010---
+		WAIT FOR 1 ms;
+		ASSERT(Xout='0')REPORT "FAIL" SEVERITY ERROR;
+		Ain<='0'; Bin<='1'; Cin<='1'; ---011---
+		WAIT FOR 1 ms;
+		ASSERT(Xout='1')REPORT "FAIL" SEVERITY ERROR;
+		Ain<='1'; Bin<='0'; Cin<='0';  ---100---
+		WAIT FOR 1 ms;
+		ASSERT(Xout='1')REPORT "FAIL" SEVERITY ERROR;
+		Ain<='1'; Bin<='0'; Cin<='1';---101---
+		WAIT FOR 1 ms;
+		ASSERT(Xout='0')REPORT "FAIL" SEVERITY ERROR;
+		Ain<='1'; Bin<='1'; Cin<='0'; ---110---
+		WAIT FOR 1 ms;
+		ASSERT(Xout='0')REPORT "FAIL" SEVERITY ERROR;
+		Ain<='1'; Bin<='1'; Cin<='1';  ---111---
+		WAIT FOR 1 ms;
+		ASSERT(Xout='0')REPORT "FAIL" SEVERITY ERROR;
+		Ain<='0'; Bin<='0'; Cin<='0';  ---000---
+		WAIT FOR 1 ms;
+		ASSERT FALSE REPORT "test done" SEVERITY NOTE;
+		WAIT;
+	END PROCESS;
+END tb;

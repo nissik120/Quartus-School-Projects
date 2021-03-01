@@ -1,0 +1,248 @@
+Simulator report for trigger
+Fri May 11 12:20:28 2018
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 10.0 ms      ;
+; Simulation Netlist Size     ; 67 nodes     ;
+; Simulation Coverage         ;      97.50 % ;
+; Total Number of Transitions ; 8496833      ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C35F672C6 ;
++-----------------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                       ;
++--------------------------------------------------------------------------------------------+-------------+---------------+
+; Option                                                                                     ; Setting     ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------+---------------+
+; Simulation mode                                                                            ; Timing      ; Timing        ;
+; Start time                                                                                 ; 0 ns        ; 0 ns          ;
+; End time                                                                                   ; 10 ms       ;               ;
+; Simulation results format                                                                  ; CVWF        ;               ;
+; Vector input source                                                                        ; trigger.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On          ; On            ;
+; Check outputs                                                                              ; Off         ; Off           ;
+; Report simulation coverage                                                                 ; On          ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On          ; On            ;
+; Display missing 1-value coverage report                                                    ; On          ; On            ;
+; Display missing 0-value coverage report                                                    ; On          ; On            ;
+; Detect setup and hold time violations                                                      ; Off         ; Off           ;
+; Detect glitches                                                                            ; Off         ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off         ; Off           ;
+; Generate Signal Activity File                                                              ; Off         ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off         ; Off           ;
+; Group bus channels in simulation results                                                   ; Off         ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On          ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE  ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off         ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto        ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      97.50 % ;
+; Total nodes checked                                 ; 67           ;
+; Total output ports checked                          ; 80           ;
+; Total output ports with complete 1/0-value coverage ; 78           ;
+; Total output ports with no 1/0-value coverage       ; 2            ;
+; Total output ports with no 1-value coverage         ; 2            ;
+; Total output ports with no 0-value coverage         ; 2            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                      ;
++-----------------------+-----------------------+------------------+
+; Node Name             ; Output Port Name      ; Output Port Type ;
++-----------------------+-----------------------+------------------+
+; |trigger|count[0]     ; |trigger|count[0]     ; regout           ;
+; |trigger|count[1]     ; |trigger|count[1]     ; regout           ;
+; |trigger|count[2]     ; |trigger|count[2]     ; regout           ;
+; |trigger|count[3]     ; |trigger|count[3]     ; regout           ;
+; |trigger|count[4]     ; |trigger|count[4]     ; regout           ;
+; |trigger|count[5]     ; |trigger|count[5]     ; regout           ;
+; |trigger|count[6]     ; |trigger|count[6]     ; regout           ;
+; |trigger|count[7]     ; |trigger|count[7]     ; regout           ;
+; |trigger|count[10]    ; |trigger|count[10]    ; regout           ;
+; |trigger|count[11]    ; |trigger|count[11]    ; regout           ;
+; |trigger|count[8]     ; |trigger|count[8]     ; regout           ;
+; |trigger|count[9]     ; |trigger|count[9]     ; regout           ;
+; |trigger|count[12]    ; |trigger|count[12]    ; regout           ;
+; |trigger|count[0]~14  ; |trigger|count[0]~14  ; combout          ;
+; |trigger|count[0]~14  ; |trigger|count[0]~15  ; cout             ;
+; |trigger|count[1]~32  ; |trigger|count[1]~32  ; combout          ;
+; |trigger|count[1]~32  ; |trigger|count[1]~33  ; cout             ;
+; |trigger|count[2]~35  ; |trigger|count[2]~35  ; combout          ;
+; |trigger|count[2]~35  ; |trigger|count[2]~36  ; cout             ;
+; |trigger|count[3]~38  ; |trigger|count[3]~38  ; combout          ;
+; |trigger|count[3]~38  ; |trigger|count[3]~39  ; cout             ;
+; |trigger|count[4]~41  ; |trigger|count[4]~41  ; combout          ;
+; |trigger|count[4]~41  ; |trigger|count[4]~42  ; cout             ;
+; |trigger|count[5]~44  ; |trigger|count[5]~44  ; combout          ;
+; |trigger|count[5]~44  ; |trigger|count[5]~45  ; cout             ;
+; |trigger|count[6]~47  ; |trigger|count[6]~47  ; combout          ;
+; |trigger|count[6]~47  ; |trigger|count[6]~48  ; cout             ;
+; |trigger|count[7]~50  ; |trigger|count[7]~50  ; combout          ;
+; |trigger|count[7]~50  ; |trigger|count[7]~51  ; cout             ;
+; |trigger|count[8]~53  ; |trigger|count[8]~53  ; combout          ;
+; |trigger|count[8]~53  ; |trigger|count[8]~54  ; cout             ;
+; |trigger|count[9]~55  ; |trigger|count[9]~55  ; combout          ;
+; |trigger|count[9]~55  ; |trigger|count[9]~56  ; cout             ;
+; |trigger|count[10]~57 ; |trigger|count[10]~57 ; combout          ;
+; |trigger|count[10]~57 ; |trigger|count[10]~58 ; cout             ;
+; |trigger|count[11]~59 ; |trigger|count[11]~59 ; combout          ;
+; |trigger|count[11]~59 ; |trigger|count[11]~60 ; cout             ;
+; |trigger|count[12]~61 ; |trigger|count[12]~61 ; combout          ;
+; |trigger|count[12]~61 ; |trigger|count[12]~62 ; cout             ;
+; |trigger|count[13]~63 ; |trigger|count[13]~63 ; combout          ;
+; |trigger|trig~reg0    ; |trigger|trig~reg0    ; regout           ;
+; |trigger|Equal0~0     ; |trigger|Equal0~0     ; combout          ;
+; |trigger|Equal0~1     ; |trigger|Equal0~1     ; combout          ;
+; |trigger|Equal0~2     ; |trigger|Equal0~2     ; combout          ;
+; |trigger|Equal0~3     ; |trigger|Equal0~3     ; combout          ;
+; |trigger|Equal0~4     ; |trigger|Equal0~4     ; combout          ;
+; |trigger|sendTrig     ; |trigger|sendTrig     ; regout           ;
+; |trigger|trig~0       ; |trigger|trig~0       ; combout          ;
+; |trigger|echoPrev     ; |trigger|echoPrev     ; regout           ;
+; |trigger|echoCurrent  ; |trigger|echoCurrent  ; regout           ;
+; |trigger|Add0~1       ; |trigger|Add0~1       ; combout          ;
+; |trigger|count~16     ; |trigger|count~16     ; combout          ;
+; |trigger|count[3]~17  ; |trigger|count[3]~17  ; combout          ;
+; |trigger|count[3]~18  ; |trigger|count[3]~18  ; combout          ;
+; |trigger|count[3]~19  ; |trigger|count[3]~19  ; combout          ;
+; |trigger|count[3]~20  ; |trigger|count[3]~20  ; combout          ;
+; |trigger|count~21     ; |trigger|count~21     ; combout          ;
+; |trigger|count~22     ; |trigger|count~22     ; combout          ;
+; |trigger|count~23     ; |trigger|count~23     ; combout          ;
+; |trigger|count~24     ; |trigger|count~24     ; combout          ;
+; |trigger|count[3]~25  ; |trigger|count[3]~25  ; combout          ;
+; |trigger|count~26     ; |trigger|count~26     ; combout          ;
+; |trigger|count[3]~28  ; |trigger|count[3]~28  ; combout          ;
+; |trigger|count[3]~29  ; |trigger|count[3]~29  ; combout          ;
+; |trigger|count[3]~30  ; |trigger|count[3]~30  ; combout          ;
+; |trigger|count[3]~31  ; |trigger|count[3]~31  ; combout          ;
+; |trigger|count~34     ; |trigger|count~34     ; combout          ;
+; |trigger|count~37     ; |trigger|count~37     ; combout          ;
+; |trigger|count~40     ; |trigger|count~40     ; combout          ;
+; |trigger|count~43     ; |trigger|count~43     ; combout          ;
+; |trigger|count~46     ; |trigger|count~46     ; combout          ;
+; |trigger|count~49     ; |trigger|count~49     ; combout          ;
+; |trigger|count~52     ; |trigger|count~52     ; combout          ;
+; |trigger|sendTrig~0   ; |trigger|sendTrig~0   ; combout          ;
+; |trigger|trig         ; |trigger|trig         ; padio            ;
+; |trigger|clk          ; |trigger|clk~corein   ; combout          ;
+; |trigger|echo         ; |trigger|echo~corein  ; combout          ;
+; |trigger|clk~clkctrl  ; |trigger|clk~clkctrl  ; outclk           ;
++-----------------------+-----------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------+
+; Missing 1-Value Coverage                                   ;
++--------------------+--------------------+------------------+
+; Node Name          ; Output Port Name   ; Output Port Type ;
++--------------------+--------------------+------------------+
+; |trigger|count[13] ; |trigger|count[13] ; regout           ;
+; |trigger|count~27  ; |trigger|count~27  ; combout          ;
++--------------------+--------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------+
+; Missing 0-Value Coverage                                   ;
++--------------------+--------------------+------------------+
+; Node Name          ; Output Port Name   ; Output Port Type ;
++--------------------+--------------------+------------------+
+; |trigger|count[13] ; |trigger|count[13] ; regout           ;
+; |trigger|count~27  ; |trigger|count~27  ; combout          ;
++--------------------+--------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri May 11 12:19:51 2018
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off trigger -c trigger
+Info: Using vector source file "C:/Users/NISSILK/Documents/Quartus Projects/trigger/trigger.vwf"
+Info: Simulation end time 10.0 ms did not reach the end of the input vector, which ended at 1.0 s
+Info: Inverted registers were found during simulation
+    Info: Register: |trigger|sendTrig
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      97.50 %
+Info: Number of transitions in simulation is 8496833
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 201 megabytes
+    Info: Processing ended: Fri May 11 12:20:28 2018
+    Info: Elapsed time: 00:00:37
+    Info: Total CPU time (on all processors): 00:00:40
+
+

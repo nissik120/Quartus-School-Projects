@@ -1,0 +1,36 @@
+|counter_even
+clk => state~1.DATAIN
+y[0] <= <GND>
+y[1] <= y[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= y[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= y[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= <GND>
+y[7] <= <GND>
+y[8] <= <GND>
+y[9] <= <GND>
+y[10] <= <GND>
+y[11] <= <GND>
+y[12] <= <GND>
+y[13] <= <GND>
+y[14] <= <GND>
+y[15] <= <GND>
+y[16] <= <GND>
+y[17] <= <GND>
+y[18] <= <GND>
+y[19] <= <GND>
+y[20] <= <GND>
+y[21] <= <GND>
+y[22] <= <GND>
+y[23] <= <GND>
+y[24] <= <GND>
+y[25] <= <GND>
+y[26] <= <GND>
+y[27] <= <GND>
+y[28] <= <GND>
+y[29] <= <GND>
+y[30] <= <GND>
+y[31] <= <GND>
+
+

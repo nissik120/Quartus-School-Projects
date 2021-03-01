@@ -1,0 +1,17 @@
+|atm_printer
+clk => mode~13.DATAIN
+q => Selector1.IN3
+q => Selector0.IN1
+r => mode~1.DATAA
+r => Selector2.IN3
+r => Selector3.IN2
+r => mode~0.DATAA
+r => Selector1.IN1
+r => Selector1.IN2
+b => mode~0.OUTPUTSELECT
+b => mode~1.OUTPUTSELECT
+b => Selector3.IN3
+s <= s~0.DB_MAX_OUTPUT_PORT_TYPE
+t <= t~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

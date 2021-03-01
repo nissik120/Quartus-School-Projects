@@ -1,0 +1,16 @@
+|divider_50
+rst => r_reg[0].ACLR
+rst => r_reg[1].ACLR
+rst => r_reg[2].ACLR
+rst => r_reg[3].ACLR
+rst => r_reg[4].ACLR
+rst => r_reg[5].ACLR
+clk_in => r_reg[0].CLK
+clk_in => r_reg[1].CLK
+clk_in => r_reg[2].CLK
+clk_in => r_reg[3].CLK
+clk_in => r_reg[4].CLK
+clk_in => r_reg[5].CLK
+clk_out <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+

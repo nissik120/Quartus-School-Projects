@@ -1,0 +1,12 @@
+
+State Machine - |counter_even|state
+Name state.e8 state.e7 state.e6 state.e5 state.e4 state.e3 state.e2 state.e1 state.e0 
+state.e0 0 0 0 0 0 0 0 0 0 
+state.e1 0 0 0 0 0 0 0 1 1 
+state.e2 0 0 0 0 0 0 1 0 1 
+state.e3 0 0 0 0 0 1 0 0 1 
+state.e4 0 0 0 0 1 0 0 0 1 
+state.e5 0 0 0 1 0 0 0 0 1 
+state.e6 0 0 1 0 0 0 0 0 1 
+state.e7 0 1 0 0 0 0 0 0 1 
+state.e8 1 0 0 0 0 0 0 0 1 

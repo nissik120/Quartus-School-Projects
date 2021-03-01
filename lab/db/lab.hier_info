@@ -1,0 +1,46 @@
+|lab
+h => b~5.IN0
+h => b~7.IN0
+h => a~0.IN0
+h => a~3.IN0
+h => d~0.IN0
+h => e~1.IN0
+h => f~3.IN0
+i => a~5.IN1
+i => b~0.IN0
+i => b~2.IN0
+i => b~5.IN1
+i => d~0.IN1
+i => a~0.IN1
+i => c~0.IN0
+i => e~3.IN0
+j => b~2.IN1
+j => b~7.IN1
+j => c~0.IN1
+j => d~1.IN1
+j => f~0.IN1
+j => f~3.IN1
+j => a~1.IN1
+j => a~4.IN1
+j => b~0.IN1
+j => e~0.IN1
+j => e~3.IN1
+k => a~2.IN1
+k => b~1.IN1
+k => d~2.IN1
+k => e~1.IN1
+k => e~4.IN1
+k => f~1.IN1
+k => f~4.IN1
+k => a~3.IN1
+k => b~3.IN1
+k => c~1.IN1
+a <= a~6.DB_MAX_OUTPUT_PORT_TYPE
+b <= b~8.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~3.DB_MAX_OUTPUT_PORT_TYPE
+d <= d~3.DB_MAX_OUTPUT_PORT_TYPE
+e <= e~5.DB_MAX_OUTPUT_PORT_TYPE
+f <= f~5.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

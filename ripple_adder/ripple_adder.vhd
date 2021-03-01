@@ -1,0 +1,24 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY ripple_adder IS
+	PORT(
+			a0, a1, a2, a3, b0, b1, b2, b3: IN STD_LOGIC;
+			s0, s1, s2, s3, Cout: OUT STD_LOGIC
+		);
+END ripple_adder ;
+
+ARCHITECTURE structural OF ripple_adder  IS
+	COMPONENT full_add IS
+	PORT(
+			a, b, c : IN STD_LOGIC;
+			s, cr: OUT STD_LOGIC
+		);
+	END COMPONENT;
+	SIGNAL c0, c1, c2: STD_LOGIC;
+	BEGIN
+		U1: full_add PORT MAP(a0, b0,'0', s0, c0);
+        U2: full_add PORT MAP(a1, b1, c0, s1, c1);
+		U3: full_add PORT MAP(a2, b2, c1, s2, c2);
+		U4: full_add PORT MAP(a3, b3, c2, s3, Cout);
+END structural;

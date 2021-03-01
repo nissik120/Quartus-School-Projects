@@ -1,0 +1,122 @@
+|traffic_one
+clk => clock_hz:U1.clk_in
+clk => trigger:U2.clk
+rst => prototype:U3.rst
+echo => trigger:U2.echo
+echo => prototype:U3.sensor
+trig <= trigger:U2.trig
+rob_a[0] <= prototype:U3.r1[0]
+rob_a[1] <= prototype:U3.r1[1]
+rob_a[2] <= prototype:U3.r1[2]
+rob_b[0] <= prototype:U3.r2[0]
+rob_b[1] <= prototype:U3.r2[1]
+rob_b[2] <= prototype:U3.r2[2]
+
+
+|traffic_one|clock_hz:U1
+clk_in => counter[0].CLK
+clk_in => counter[1].CLK
+clk_in => counter[2].CLK
+clk_in => counter[3].CLK
+clk_in => counter[4].CLK
+clk_in => counter[5].CLK
+clk_in => counter[6].CLK
+clk_in => counter[7].CLK
+clk_in => counter[8].CLK
+clk_in => counter[9].CLK
+clk_in => counter[10].CLK
+clk_in => counter[11].CLK
+clk_in => counter[12].CLK
+clk_in => counter[13].CLK
+clk_in => counter[14].CLK
+clk_in => counter[15].CLK
+clk_in => counter[16].CLK
+clk_in => counter[17].CLK
+clk_in => counter[18].CLK
+clk_in => counter[19].CLK
+clk_in => counter[20].CLK
+clk_in => counter[21].CLK
+clk_in => counter[22].CLK
+clk_in => counter[23].CLK
+clk_in => counter[24].CLK
+clk_in => counter[25].CLK
+clk_in => counter[26].CLK
+clk_in => counter[27].CLK
+clk_in => counter[28].CLK
+clk_in => counter[29].CLK
+clk_in => counter[30].CLK
+clk_in => counter[31].CLK
+clk_in => temp.CLK
+clk_out <= temp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|traffic_one|trigger:U2
+clk => trig~reg0.CLK
+clk => echoCurrent.CLK
+clk => echoPrev.CLK
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+clk => count[10].CLK
+clk => count[11].CLK
+clk => count[12].CLK
+clk => count[13].CLK
+clk => sendTrig.CLK
+echo => echoCurrent.DATAIN
+echo => sendTrig.OUTPUTSELECT
+echo => count.OUTPUTSELECT
+echo => count.OUTPUTSELECT
+echo => count.OUTPUTSELECT
+echo => count.OUTPUTSELECT
+echo => count.OUTPUTSELECT
+echo => count.OUTPUTSELECT
+echo => count.OUTPUTSELECT
+echo => count.OUTPUTSELECT
+echo => count.OUTPUTSELECT
+echo => count.OUTPUTSELECT
+echo => count.OUTPUTSELECT
+echo => count.OUTPUTSELECT
+echo => count.OUTPUTSELECT
+echo => count.OUTPUTSELECT
+trig <= trig~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|traffic_one|prototype:U3
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => current_state~1.DATAIN
+rst => current_state~3.DATAIN
+rst => count[4].ENA
+rst => count[3].ENA
+rst => count[2].ENA
+rst => count[1].ENA
+rst => count[0].ENA
+sensor => current_state.OUTPUTSELECT
+sensor => current_state.OUTPUTSELECT
+sensor => current_state.OUTPUTSELECT
+sensor => current_state.OUTPUTSELECT
+sensor => current_state.OUTPUTSELECT
+sensor => current_state.OUTPUTSELECT
+sensor => count.OUTPUTSELECT
+sensor => count.OUTPUTSELECT
+sensor => count.OUTPUTSELECT
+sensor => count.OUTPUTSELECT
+sensor => count.OUTPUTSELECT
+r1[0] <= r1[0].DB_MAX_OUTPUT_PORT_TYPE
+r1[1] <= r1[1].DB_MAX_OUTPUT_PORT_TYPE
+r1[2] <= r1.DB_MAX_OUTPUT_PORT_TYPE
+r2[0] <= r2[0].DB_MAX_OUTPUT_PORT_TYPE
+r2[1] <= r2[1].DB_MAX_OUTPUT_PORT_TYPE
+r2[2] <= r2.DB_MAX_OUTPUT_PORT_TYPE
+
+

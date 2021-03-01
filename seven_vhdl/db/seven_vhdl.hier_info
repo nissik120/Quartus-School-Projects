@@ -1,0 +1,46 @@
+|seven_vhdl
+h => b.IN0
+h => b.IN0
+h => a.IN0
+h => a.IN0
+h => d.IN0
+h => e.IN0
+h => f.IN0
+i => a.IN1
+i => b.IN0
+i => b.IN0
+i => b.IN1
+i => d.IN1
+i => a.IN1
+i => c.IN0
+i => e.IN0
+j => b.IN1
+j => b.IN1
+j => c.IN1
+j => d.IN1
+j => f.IN1
+j => f.IN1
+j => a.IN1
+j => a.IN1
+j => b.IN1
+j => e.IN1
+j => e.IN1
+k => a.IN1
+k => b.IN1
+k => b.IN1
+k => d.IN1
+k => e.IN1
+k => e.IN1
+k => f.IN1
+k => f.IN1
+k => a.IN1
+k => c.IN1
+a <= a.DB_MAX_OUTPUT_PORT_TYPE
+b <= b.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+d <= d.DB_MAX_OUTPUT_PORT_TYPE
+e <= e.DB_MAX_OUTPUT_PORT_TYPE
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+
+

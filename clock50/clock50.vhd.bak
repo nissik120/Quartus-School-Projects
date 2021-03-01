@@ -1,0 +1,22 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity clock50 is
+	port(
+	 a: in std_logic;
+	 y: buffer std_logic
+	);
+end clock50;
+-------------------------------------------------------------------
+
+architecture dataflow of clock50 is
+	signal clk: std_logic:='0';
+	begin
+		clkdiv: my_counter PORT MAP (a,clk);
+	process(clk)
+	begin
+		if(rising_edge(clk)) then
+			y<= NOT(y);
+		end if;
+	end process;
+end dataflow;

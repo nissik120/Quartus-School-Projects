@@ -1,0 +1,36 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 8.284 ns
+From           : y~reg0
+To             : y
+From Clock     : a
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'a'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 252.33 MHz ( period = 3.963 ns )
+From           : my_counter:clkdiv|lpm_counter:lpm_counter_component|cntr_cmh:auto_generated|safe_q[0]
+To             : my_counter:clkdiv|lpm_counter:lpm_counter_component|cntr_cmh:auto_generated|safe_q[25]
+From Clock     : a
+To Clock       : a
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

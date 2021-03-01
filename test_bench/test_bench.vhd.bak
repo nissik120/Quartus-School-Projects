@@ -1,0 +1,59 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+------------------------------------------------------------------------
+ENTITY test_bench IS
+END ENTITY test_bench;
+------------------------------------------------------------------------
+ARCHITECTURE arch_test OF test_bench IS
+-------DUT DECLARATION---------------------------------------------------
+	COMPONENT test_unit IS
+		PORT(
+			d0,d1,d2,d3,d4,d5,d6,d7,d8,d9 : IN STD_LOGIC;
+			f: OUT STD_LOGIC_VECTOR(6 DOWNTO 0)
+		);
+	END COMPONENT;
+---------signal declaration-----------------------------------------------
+SIGNAL a,b,c,d,e,f,g,h,i,j : STD_LOGIC:='0';
+SIGNAL y : STD_LOGIC_VECTOR(6 DOWNTO 0);
+	BEGIN
+		dut: test_unit PORT MAP (d0=>a,d1=>b,d2=>c,d3=>d,d4=>e,d5=>f,d6=>g,d7=>h,d8=>i,d9=>j);
+		PROCESS(a,b,c,d,e,f,g,h,i,j)
+			BEGIN
+			IF(a='1') THEN 
+				y <="0000001";
+				WAIT FOR 2s;
+			ELSIF(b='1') THEN 
+				y<="1001111";
+				WAIT FOR 2s;
+			ELSIF(c='1') THEN 
+				y<="0010010";
+				WAIT FOR 2s;
+			ELSIF(d='1') THEN 
+				y<="0000110";
+				WAIT FOR 2s;
+			ELSIF(e='1') THEN 
+				y<="1001100";
+				WAIT FOR 2s;
+			ELSIF(f='1') THEN 
+				y<="0100100";
+				WAIT FOR 2s;
+			ELSIF(g='1') THEN 
+				y<="0100000";
+				WAIT FOR 2s;
+			ELSIF(h='1') THEN 
+				y<="0001111";
+				WAIT FOR 2s;
+			ELSIF(i='1') THEN 
+				y<="0000000";
+				WAIT FOR 2s;
+			ELSIF(j='1') THEN 
+				y<="0000100";
+				WAIT FOR 2s;
+			ELSE
+				y<="1111111";
+				WAIT FOR 2s;
+			END IF;
+			WAIT;
+		
+		END PROCESS;
+END arch_test;

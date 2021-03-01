@@ -1,0 +1,14 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY or_function IS
+	PORT(
+			a, b: IN STD_LOGIC;
+			y: OUT STD_LOGIC
+		);
+END or_function;
+--------------------------------------------------
+ARCHITECTURE behavioral OF or_function IS
+	BEGIN
+		y<= a OR b;
+END behavioral;

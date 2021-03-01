@@ -1,0 +1,18 @@
+|counter_seven
+x => c[0].CLK
+x => c[1].CLK
+x => c[2].CLK
+x => c[3].CLK
+x => \count:a[0].CLK
+x => \count:a[1].CLK
+x => \count:a[2].CLK
+x => \count:a[3].CLK
+y[6] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+y[0] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
