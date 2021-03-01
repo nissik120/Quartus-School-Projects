@@ -1,6 +1,6 @@
 # Quartus-School-Projects
 
-## Brief Description on the Repository
+## Brief Description
 
 This repository consists of VHDL based projects that were done during my undergraduate studies for a subject called Programmable Electronics Design.
 The main tool used for developing was Quartus and projects executed on the Altera DE2 board.
@@ -12,9 +12,9 @@ It consists of several basic projects that introduce the following concepts:
 * Behavioral Modelling
 * State Machines
 
-## About the Main Project
+## About the Main Examinable Project
 
-The traffic-one project puts into use all these concepts and was the main examinable project for the subject.
+The [traffic-one](https://github.com/nissik120/Quartus-School-Projects/tree/main/traffic_one) project puts into use all these concepts and was the main examinable project for the subject.
 The project implements a traffic light system betweeen a main and secondary road. 
 An ultrasonic sensor is interfaced. The sensor detect if a car is present or is approaching from the secondary road torwards the intersection.
 If one approaches the system sets off a 15 seconds timer that will allow secondary road users to get access to get into the main road for the following 45-60 seconds.
